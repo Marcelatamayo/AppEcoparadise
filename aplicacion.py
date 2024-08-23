@@ -1,7 +1,7 @@
 import pandas as pd
 import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
+#from streamlit_lottie import st_lottie
 from PIL import Image
 
 
@@ -21,17 +21,18 @@ def css_load(css_file):
 
 css_load("style/main.css")  # Cargar el archivo CSS desde la ruta especificada
 
-url = "https://lottie.host/54c476fd-523a-429c-bf77-4b2f1aac725a/xKdKPZxKGJ.json"
+#url = "https://lottie.host/54c476fd-523a-429c-bf77-4b2f1aac725a/xKdKPZxKGJ.json"
 
-# Función para cargar la animación Lottie
-def load_lottie(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
+# # Función para cargar la animación Lottie
+# def load_lottie(url):
+#     r = requests.get(url)
+#     if r.status_code != 200:
+#         return None
+#     return r.json()
 
-# Cargar la animación Lottie en la página web
-lottie = load_lottie(url)
+# # Cargar la animación Lottie en la página web
+# lottie = load_lottie(url)
+
 
 def nosotros():
 # Sección "Somos Ecoparadise"
@@ -56,8 +57,8 @@ def nosotros():
             ¿En qué alojamiento deseas soñar? Tenemos varias opciones para ti. 💬📲
             """
         )
-        with animation_column:
-            st_lottie(lottie, height=400)
+    #    with animation_column:
+      #      st_lottie(lottie, height=400)
     contacto()
 
 # contacto
